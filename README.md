@@ -14,6 +14,9 @@
 - [Selection Sort](/Algorithms/selection_sort.py) [Chapter 2 - GA]
 - [Quicksort](/Algorithms/quicksort.py) [Chapter 4 - GA]
 
+# Problems
+- [Maximum Contiguous Subarray](/Algorithms/maximum_subarray.py) [Section 4.1 - CLRS]
+
 # Books
 - [GA] [Grokking Algorithms by Aditya Y. Bhargava](https://www.manning.com/books/grokking-algorithms)
 - [CLRS] [Introduction to Algorithms by CLRS - 3rd edition](https://g.co/kgs/9FzkPV)
