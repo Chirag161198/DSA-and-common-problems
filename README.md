@@ -14,6 +14,7 @@
 - [Insertion Sort](/Algorithms/insertion_sort.cpp) [Section 2.1 - CLRS]
 - [Selection Sort](/Algorithms/selection_sort.py) [Chapter 2 - GA]
 - [Quicksort](/Algorithms/quicksort.py) [Chapter 4 - GA]
+- [Mergesort](/Algorithms/merge_sort.cpp) [Section 4.5 - Skiena]
 
 # Problems
 - [Maximum Contiguous Subarray](/Algorithms/maximum_subarray.py) [Section 4.1 - CLRS]
