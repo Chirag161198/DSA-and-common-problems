@@ -1,6 +1,6 @@
 # Data Structures
 - [Binary Search Trees](/DataStructures/binary_search_trees.cpp) [Section 3.4 - Skiena]
-- [Graphs](/DataStructures/implement_graph.py) [Chapter 6 - GA]
+- [Graphs](/DataStructures/graphs.cpp) [Chapter 6 - GA and Section 5.2 - Skiena]
 - [Linked List](/DataStructures/linked_list.cpp) [Section 3.1 - Skiena]
 - [Max Heap using priority queue](/DataStructures/priority_queue.cpp) [Section 4.3.1 - Skiena]
 
@@ -19,7 +19,7 @@
 # Problems
 - [Maximum Contiguous Subarray](/Algorithms/maximum_subarray.py) [Section 4.1 - CLRS]
 
-# Books
+# Reference Material
 - [GA] [Grokking Algorithms by Aditya Y. Bhargava](https://www.manning.com/books/grokking-algorithms)
 - [CLRS] [Introduction to Algorithms by CLRS - 3rd edition](https://g.co/kgs/9FzkPV)
 - [Skiena] [The Algorithm Design Manual by Steven S. Skiena - 2nd edition](https://g.co/kgs/7YhtuZ)
