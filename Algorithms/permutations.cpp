@@ -7,56 +7,62 @@ using namespace std;
 
 void permutate(stack<int> current, vector<int> elements, vector<stack<int>> &results)
 {
-  if (0 == elements.size())
-  {
-    results.push_back(current);
-    return;
-  }
-
-  for (int i = 0; i < elements.size(); i++)
-  {
-    current.push(elements[i]);
-    vector<int> temp;
-    for (int j = 0; j < elements.size(); j++)
+    if (0 == elements.size())
     {
-      if (i != j)
-        temp.push_back(elements[j]);
+        results.push_back(current);
+        return;
     }
-    permutate(current, temp, results);
-    current.pop();
-  }
+
+    for (int i = 0; i < elements.size(); i++)
+    {
+        current.push(elements[i]);
+        vector<int> temp;
+        for (int j = 0; j < elements.size(); j++)
+        {
+            if (i != j)
+                temp.push_back(elements[j]);
+        }
+        permutate(current, temp, results);
+        current.pop();
+    }
 }
 
-vector<stack<int>> generatePermutations(vector<int> elements)
+vector<vector<int>> generatePermutations(vector<int> elements)
 {
-  vector<stack<int>> results;
-  permutate(stack<int>(), elements, results);
-  return results;
+    vector<stack<int>> resultsStack;
+    permutate(stack<int>(), elements, resultsStack);
+    vector<vector<int>> results(resultsStack.size());
+    for (int i = resultsStack.size()-1; i >=0; i--)
+    {
+        while (!resultsStack[i].empty())
+        {
+            results[i].push_back(resultsStack[i].top());
+            resultsStack[i].pop();
+        }
+    }
+    return results;
 }
 
 int main()
 {
-  int sampleSpaceSize;
-  cout << "Enter number of elements in sample space: ";
-  cin >> sampleSpaceSize;
+    int sampleSpaceSize;
+    cout << "Enter number of elements in sample space: ";
+    cin >> sampleSpaceSize;
 
-  vector<int> sampleSpace(sampleSpaceSize);
+    vector<int> sampleSpace(sampleSpaceSize);
 
-  cout << "Enter " << sampleSpaceSize << " element(s) space separated : ";
-  for (int i = 0; i < sampleSpaceSize; i++)
-    cin >> sampleSpace[i];
+    cout << "Enter " << sampleSpaceSize << " element(s) space separated : ";
+    for (int i = 0; i < sampleSpaceSize; i++)
+        cin >> sampleSpace[i];
 
-  cout << endl;
-  vector<stack<int>> permutations = generatePermutations(sampleSpace);
-  cout << "The permutation(s) is/are:" << endl;
-  for (int i = 0; i < permutations.size(); i++)
-  {
-    while (!permutations[i].empty())
+    cout << endl;
+    vector<vector<int>> permutations = generatePermutations(sampleSpace);
+    cout << "The permutation(s) is/are:" << endl;
+    for (int i = 0; i < permutations.size(); i++)
     {
-      cout << permutations[i].top() << " ";
-      permutations[i].pop();
+        for (int j=0;j<permutations[i].size();j++)
+            cout << permutations[i][j] << " ";
+        cout << endl;
     }
     cout << endl;
-  }
-  cout << endl;
 }
