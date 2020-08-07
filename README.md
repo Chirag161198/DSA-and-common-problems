@@ -16,6 +16,7 @@
 - [Quicksort](/Algorithms/quicksort.py) [Chapter 4 - GA]
 - [Mergesort](/Algorithms/merge_sort.cpp) [Section 4.5 - Skiena]
 - [Generating all subsets of distinct elements](/Algorithms/subsets.cpp) [Section 7.1.1 - Skiena]
+- [Generating all permutations of distinct elements](/Algorithms/permutations.cpp) [Section 7.1.2 - Skiena]
 
 # Problems
 - [Maximum Contiguous Subarray](/Algorithms/maximum_subarray.py) [Section 4.1 - CLRS]
