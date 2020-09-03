@@ -20,6 +20,7 @@
 
 # Problems
 - [Maximum Contiguous Subarray](/Algorithms/maximum_subarray.py) [Section 4.1 - CLRS]
+- [All paths between two nodes in a graph](/CommonProblems/allPathsInGraph.cpp) [Section 7.1.3 - Skiena]
 
 # Reference Material
 - [GA] [Grokking Algorithms by Aditya Y. Bhargava](https://www.manning.com/books/grokking-algorithms)
